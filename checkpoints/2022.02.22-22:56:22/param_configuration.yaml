@@ -1,0 +1,35 @@
+atomic_batch_size: 1024
+atomic_cp_dir: ''
+atomic_cp_str: ''
+atomic_eps_decay: 0.4
+atomic_eps_end: 0.1
+atomic_eps_start: 1
+atomic_gamma: 0.9
+atomic_model_file: models/medium/model.py
+atomic_model_path: models/medium/model.py
+atomic_policy_update_rate: 1
+atomic_pretrain_steps: 150000
+atomic_target_update_rate: 250000
+atomic_total_training_steps: 100000
+atomic_use_per: true
+coppeliaScene: envs/opposite-both-required-hierarchical-decomposed-same-state-nav-env/YouBotNavigationScene.ttt
+env_file: envs/opposite-both-required-hierarchical-decomposed-same-state-nav-env/simple-decomposed-nav-env.py
+experiment_name: default
+lr: 0.0005
+mem_size: 1000000
+meta_batch_size: 256
+meta_cp_dir: ''
+meta_cp_str: ''
+meta_eps_decay: 0.4
+meta_eps_end: 0.1
+meta_eps_start: 1
+meta_gamma: 1
+meta_model_file: models/medium/model.py
+meta_model_path: models/medium/model.py
+meta_policy_update_rate: 3
+meta_target_update_rate: 1000
+meta_total_training_steps: 50000
+meta_use_per: true
+optimization_steps: 1
+optimizer: !!python/name:torch.optim.rmsprop.RMSprop ''
+policy_loss_fn: !!python/name:torch.nn.functional.smooth_l1_loss ''
